@@ -1,0 +1,160 @@
+body {
+    margin: 10px;
+}
+
+#container {
+    display: grid;
+    gap: 40px;
+}
+
+header {
+    grid-row: 1;
+    grid-column: 1/4;
+}
+
+.background {
+    background-repeat: repeat;
+    border-radius: 10px;
+    margin: 0px;
+    filter: drop-shadow(0 0 25px pink);
+    width: 100%;
+    text-align: center;
+    font-size: 150px;
+    text-shadow: rgb(255, 133, 255) 10px 10px 1px;
+}
+
+.osaka {
+    background-image: url("Images/osaka-castle.jpg");
+}
+
+.tokyo {
+    background-image: url("Images/tokyo.jpg");
+}
+
+.kyoto {
+    background-image: url("Images/kyoto.jpg");
+}
+
+#icons {
+    grid-row: 2;
+    grid-column: 1/4;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    justify-content: center;
+    border: solid white;
+    padding: 30px;
+    background: radial-gradient(ellipse at bottom, rgba(255, 255, 255, 0.589) 0%, rgba(255, 192, 203, 0.541) 100%);
+    border-radius: 10px;
+    filter: drop-shadow(0 0 20px pink);
+}
+
+.food-icon, .activites-icon, .sights-icon {
+    transition: 0.5s;
+    width: 200px;
+    height: 200px;
+    opacity: 0.5;
+    margin: 5px;
+    border-radius: 30%;
+}
+
+.food-icon:hover, .activites-icon:hover, .sights-icon:hover{
+    transition: 1s;
+    box-shadow: white solid;
+    width: 250px;
+    height: 250px;
+    opacity: 1;
+    box-shadow: 5px 5px 20px black;
+    filter: drop-shadow(0 0 70px rgba(255, 0, 255, 0.726)); 
+}
+
+#sight-seeing, #activites, #food, #weather-section, footer {
+    margin: 10px;
+}
+
+#sight-seeing {
+    grid-row: 3;
+    grid-column: 1/4;
+}
+
+#activites {
+    grid-row: 4;
+    grid-column: 1/4;
+}
+
+#food {
+    grid-row: 5;
+    grid-column: 1/4;
+}
+
+#weather-section {
+    grid-row: 6;
+    grid-column: 1/4;
+}
+
+.weather-section {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: center;
+    width: 50%;
+}
+
+.weather {
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    border: solid;
+    border-radius: 10px;
+}
+
+footer {
+    grid-row: 7;
+    grid-column: 1/4;
+}
+
+footer > a > h1 {
+    text-align: center;
+}
+
+.line {
+    width: 100%;
+    background-color: rgba(255, 192, 203, 0.733);
+    height: 1px;
+    margin-bottom: 100px;
+    box-shadow: pink 0px 0px 10px 2px;
+}
+
+@media screen and (max-width: 1600px) {
+    header > img {margin-top: -12%;}
+    h1 {top: 170%; font-size: 800%;}  
+}
+
+
+@media screen and (max-width: 1000px) {
+    header > img {     
+        margin-top: -12%;
+    }
+
+    h1 {
+        top: 130%;
+        font-size: 600%;
+    }
+    
+}
+
+@media screen and (max-width: 600px) {
+    header > img {     
+        margin-top: -26%;
+    }
+
+    h1 {
+        top: 70%;
+        font-size: 400%;
+    }
+}
